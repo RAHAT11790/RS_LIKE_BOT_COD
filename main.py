@@ -1,4 +1,4 @@
-importrt os
+import os  # Fixed typo: changed 'importrt' to 'import'
 import time
 import logging
 from threading import Thread
@@ -176,7 +176,7 @@ def like_cmd(message):
             f"┃   ⚡ LIKE — SUCCESSFUL   ┃\n"
             f"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n\n"
             f"[📌 Preparing secure like successful]\n\n"
-            f"📊 Progress: 100% ✅✅💎\n\n[RS LIKE BOT GOT {data.get('LikesGivenByAPI', 0)} LIKE 😍]"
+            f"📊 Progress: 100% 😍😍\n\n[RS LIKE BOT GOT {data.get('LikesGivenByAPI', 0)} LIKE 😍]"
         )
         msg_quick = bot.send_message(message.chat.id, quick_txt, parse_mode="HTML")
         time.sleep(2)
@@ -208,9 +208,9 @@ def like_cmd(message):
         nick = data.get("PlayerNickname", "Unknown")
         uid_resp = data.get("UID", uid)
         txt = (
-            f"╔══════⚠️💖⚠️══════╗\n"
+            f"╔══════⚠️💔⚠️══════╗\n"
             f"     ALREADY LIKED\n"
-            f"╚══════⚠️💖⚠️══════╝\n\n"
+            f"╚══════⚠️💔⚠️══════╝\n\n"
             f"🏆 PLAYER DETAILS\n╭──────────────────╮\n"
             f"  🪪 Name: {nick}\n  🆔 UID: {uid_resp}\n  🌍 Region: {region.upper()}\n"
             f"╰──────────────────╯\n\n💎 LIKE STATUS\n╭───────────╮\n"
